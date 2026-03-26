@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charset Declaration -->
+        <meta charset="UTF-8">
+        <!-- Viewport Settings for Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page Description for SEO -->
+        <meta name="description" content="This page has a form that records favourites of website visitors">
+        <!-- Keywords for SEO -->
+        <meta name="keywords" content="html form, Favourites, fun coding">
+        <!-- Author Information -->
+        <meta name="author" content="AT">
+        
+        <!-- Page Title (tab bar text) -->
+        <title>Favourite Things Form</title>
+    </head>
+    <body>
+        <header>
+            <!-- Main Heading (Level 1) - link within the page-->
+            <h1>Tell me about your favourite things!!!</h1>
+        </header>
+        <!-- Unordered List - Navigation -->     
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+                <label for="name">Your Legendary Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your mighty name (40 Characters max)" maxlength="40" required>
+                <br>
+                 <!-- Favourite Number -->
+                 <label for="number">Favourite Number from 0 to 9:</label><br>
+                 <input type="text" id="number" name="number" pattern="\d{1}" placeholder="e.g., 2"><br><br>
+                <!-- Favourite Colour -->
+                <label for="colour">Favourite Colour (No, &apos;Invisible&apos; isn&apos;t a colour):</label><br>
+                <input type="color" id="colour" name="colour"><br><br>
+
+                <label for="pet">Favourite Pet :</label><br>
+                <label for="dog"> <input type="checkbox" id="dog" name="pet[]" value="dog">Dog</label><br><br>
+                <label for="cat"> <input type="checkbox" id="cat" name="pet[]" value="cat">Cat</label><br><br>
+                <label for="dragon"> <input type="checkbox" id="dragon" name="pet[]" value="dragon">Dragon</label><br><br>
+                
+                <label for="teacher">Favourite Teacher :</label><br>
+                <label for="ati"> <input type="radio" id="ati" name="teacher" value="Ati" checked>Ati</label><br><br>
+                <label for="others"> <input type="radio" id="others" name="teacher" value="others" disabled>Someone Else</label><br><br>
+                
+                <label for="genre">Favourite Movie Genre :</label><br>
+                <select id="genre" name="genre">
+                    <option value="">Select an option</option>
+                    <option value="comedy">Comedy (Because life is too serious)</option>
+                    <option value="sci-fic">Sci-Fi (For the future visionaries)</option>
+                    <option value="romance">Romance (For the hopeless romantics)</option>
+                </select>
+                    <!-- Time (Time Picker) -->
+                <label for="naptime"> Favourite Time to Take a Nap: </label>
+                <input type="time" id="naptime" name="naptime"><br><br>
+
+                <!-- Birthday (Date Picker) -->
+                <fieldset>
+                    <legend>Birthday</legend>  
+                    <label for="birthday">Your Birthday (Because everyone loves cake!):</label><br>
+                    <input type="date" id="birthday" name="birthday" required><br><br>
+                </fieldset>
+                <!-- Rating Your Day (Range) -->
+                <label for="dayrating">How&apos;s Your Day Going? (Slide to rate):</label><br>
+                <input type="range" id="dayrating" name="dayrating" min="1" max="10"><br><br>
+                
+                <!-- Comments (Textarea) -->
+                <label for="comments">Any Additional Comments or Fun Facts?</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts, or tell us something interesting!" required></textarea><br><br>
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Your Favourites">
+                <!-- Reset Button -->
+                <input type="reset" value="Reset">
+            </form>
+            
+        </main>
+        <footer>
+            <!-- Link / hyperlink -->
+            <p><em>Learn more about cats?</em> Visit <a href="https://en.wikipedia.org/wiki/Cat">this website</a>.</p>
+
+            <!-- Additional Headings (Level 3 to 6) -->
+            <h3>Send Email to <a href="mailto:ati@swin.edu.au">Ati</a> for Additional Information</h3>
+            <h4>Doki's Personality</h4>
+            <h5>Quirky Habits</h5>
+            <h6>Favourite Toys</h6>
+
+            <!-- copyright notice -->
+            <p> &copy; 2025 Ati. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
